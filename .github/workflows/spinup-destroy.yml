@@ -65,6 +65,7 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
+
       - name: Destroy Azure environment
         if: success()
         run: |
